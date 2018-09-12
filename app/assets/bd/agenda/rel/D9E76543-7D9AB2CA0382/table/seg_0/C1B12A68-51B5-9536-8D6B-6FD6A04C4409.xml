@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C1B12A68-51B5-9536-8D6B-6FD6A04C4409" name="Contacts">
+<createdBy>fernando</createdBy>
+<createdTime>2018-09-12 14:21:27 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="55D79216-1388-CB89-533C-B073C894CC0C">
+<createdBy>fernando</createdBy>
+<createdTime>2018-09-12 14:26:26 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="1D7C2891-B6B0-E4B0-FCD9-54DD96BE4EE9">
+<createdBy>fernando</createdBy>
+<createdTime>2018-09-12 14:28:46 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="AFDD86C8-1125-BDBB-13A8-FEAB3D6C144F">
+<createdBy>fernando</createdBy>
+<createdTime>2018-09-12 14:29:27 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kind_id" id="8E23DFFC-B4AF-92ED-CC7D-01A5424BEEDD">
+<createdBy>fernando</createdBy>
+<createdTime>2018-09-12 14:30:05 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9DF9A5D-AF6E-0E6B-7A93-A95314A73E23" referredColumn="3AE46480-830B-CAF5-037C-0FFEB535BADB"/>
+</associations>
+</Column>
+<Column name="rmk" id="12715CD5-6811-2E14-D932-16AFEDC34BF1">
+<createdBy>fernando</createdBy>
+<createdTime>2018-09-12 14:30:19 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="048870EE-30A8-EB61-3904-A49D3494E06E" name="Contact_PK">
+<createdBy>fernando</createdBy>
+<createdTime>2018-09-12 14:27:31 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55D79216-1388-CB89-533C-B073C894CC0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3798449-E2DF-2EDF-00D3-FAD5D787C5B6" name="Contacts_Kinds_FK">
+<createdBy>fernando</createdBy>
+<createdTime>2018-09-12 14:52:20 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E23DFFC-B4AF-92ED-CC7D-01A5424BEEDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
