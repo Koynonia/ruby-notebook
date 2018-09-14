@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2018_09_13_122621) do
   end
 
   create_table "kinds", force: :cascade do |t|
-    t.string "discription"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
