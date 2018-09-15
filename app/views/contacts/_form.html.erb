@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <h1>Contacts</h1>
+  <h1><%= Contact.model_name.human %></h1>
 
   <div class="field">
     <%= form.label :name %>
@@ -24,22 +24,22 @@
   </div>
 
   <div class="field">
-    <%= form.label :kind_id %>
-    <%= collection_select(:contact, :kind_id, @kind_options_for_select, :id, :description) %>
+    <%= form.label :kind %>
+    <%= form.collection_select(:kind_id, @kind_options_for_select, :id, :description) %>
   </div>
 
   <%= form.fields_for :address do |address_fields| %>
     <div class="field">
-      <%= form.label :street %>
+      <%= address_fields.label :street %>
       <%= address_fields.text_field :street %>
     </div>
     <div class="field">
-      <%= form.label :city %>
+      <%= address_fields.label :city %>
       <%= address_fields.text_field :city %>
     </div>
       <div class="field">
-      <%= form.label :state %>
-      <%= address_fields.text_field :state %>
+      <%= address_fields.label :state %>
+      <%= address_fields.select :state, options_for_states(@contact.address.state) %>
     </div>
   <% end %>
   

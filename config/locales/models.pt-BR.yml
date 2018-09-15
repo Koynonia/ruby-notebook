@@ -8,3 +8,9 @@
         email: "Email"
         kind: "Tipo de Contato"
         rmk: "Observação"
+
+      address: Endereço
+      address:
+        street: "Logradouro"
+        city: "Cidade"
+        state: "Estado"
