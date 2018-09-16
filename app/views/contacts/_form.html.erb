@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <h1><%= Contact.model_name.human %></h1>
+  <h1><%= Contact.model_name.human(count: 1) %></h1>
 
   <div class="field">
     <%= form.label :name %>
@@ -24,7 +24,7 @@
   </div>
 
   <div class="field">
-    <%= form.label :kind %>
+    <%= form.label :kind_id %>
     <%= form.collection_select(:kind_id, @kind_options_for_select, :id, :description) %>
   </div>
 
