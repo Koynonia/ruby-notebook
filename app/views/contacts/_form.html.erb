@@ -1,7 +1,7 @@
 <%= form_with(model: contact, local: true, class: :"dark-matter") do |form| %>
   <% if contact.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+      <h2><%= "#{pluralize(@contact.errors.count, "error")} #{t('message.error')}:" %></h2>
 
       <ul>
       <% contact.errors.full_messages.each do |message| %>
@@ -10,8 +10,6 @@
       </ul>
     </div>
   <% end %>
-
-  <h1><%= Contact.model_name.human(count: 1) %></h1>
 
   <div class="field">
     <%= form.label :name %>
@@ -49,7 +47,8 @@
     <% end %>
     <div class="field">
       <%= link_to_add_association('[+] Adicionar Telefone', form, :phones) %>
-      <br><br>
+      <br>
+      <br>
     </div>
   </div>
 
@@ -59,7 +58,7 @@
   </div>
 
   <div class="actions">
-    <%= form.submit 'Enviar', class: 'button' %>
-    <%= link_to 'Voltar', contacts_path, class: 'button' %>
+    <%= form.submit t('buttons.save'), class: 'button' %>&nbsp;&nbsp;&nbsp;
+    <%= link_to t('buttons.back'), contacts_path, class: 'button' %>
   </div>
 <% end %>

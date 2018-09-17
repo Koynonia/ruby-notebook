@@ -1,6 +1,4 @@
-<h1>Editing Kind</h1>
-
-<%= render 'form', kind: @kind %>
-
-<%= link_to 'Show', @kind %> |
-<%= link_to 'Back', kinds_path %>
+<div class="dark-matter">
+    <h1><%= "#{t('title.edit')} #{@kind.model_name.human(count: 1)}" %></h1>
+    <%= render 'form', kind: @kind %>
+</div>

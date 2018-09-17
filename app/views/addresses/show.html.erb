@@ -1,24 +1,31 @@
-<p id="notice"><%= notice %></p>
+<div class="dark-matter">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Street:</strong>
-  <%= @address.street %>
-</p>
+  <h1><%= "#{t('title.details')}" %></h1>
 
-<p>
-  <strong>City:</strong>
-  <%= @address.city %>
-</p>
+  <p>
+    <strong><%= Address.human_attribute_name("street") %>:</strong>
+    <%= @address.street %>
+  </p>
 
-<p>
-  <strong>State:</strong>
-  <%= @address.state %>
-</p>
+  <p>
+    <strong><%= Address.human_attribute_name("city") %>:</strong>
+    <%= @address.city %>
+  </p>
 
-<p>
-  <strong>Contact:</strong>
-  <%= @address.contact %>
-</p>
+  <p>
+    <strong><%= Address.human_attribute_name("state") %>:</strong>
+    <%= @address.state %>
+  </p>
 
-<%= link_to 'Edit', edit_address_path(@address) %> |
-<%= link_to 'Back', addresses_path %>
+  <p>
+    <strong><%= Address.human_attribute_name("contact_id") %>:</strong>
+    <%= @address.contact.name %>
+  </p>
+  <br>
+  <br>
+  <div class="actions">
+      <%= link_to t('buttons.edit'), edit_address_path(@address), class: 'button' %>&nbsp;&nbsp;&nbsp;
+      <%= link_to t('buttons.back'), addresses_path, class: 'button' %>
+  </div>
+</div>

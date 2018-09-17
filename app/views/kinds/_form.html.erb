@@ -1,7 +1,7 @@
-<%= form_with(model: kind, local: true) do |form| %>
+<%= form_with(model: kind, local: true, class: :"dark-matter") do |form| %>
   <% if kind.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(kind.errors.count, "error") %> prohibited this kind from being saved:</h2>
+      <h2><%= "#{pluralize(@contact.errors.count, "error")} #{t('message.error')}:" %></h2>
 
       <ul>
       <% kind.errors.full_messages.each do |message| %>
@@ -15,8 +15,9 @@
     <%= form.label :description %>
     <%= form.text_field :description %>
   </div>
-
+  <br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit t('buttons.save'), class: 'button' %>&nbsp;&nbsp;&nbsp;
+    <%= link_to t('buttons.back'), kinds_path, class: 'button' %>
   </div>
 <% end %>

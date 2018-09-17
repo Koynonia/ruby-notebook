@@ -1,1 +1,4 @@
-<%= render 'form', contact: @contact %>
+<div class="dark-matter">
+    <h1><%= "#{t('title.new')} #{@contact.model_name.human(count: 1)}" %></h1>
+    <%= render 'form', contact: @contact %>
+</div>

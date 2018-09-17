@@ -1,6 +1,4 @@
-<h1>Editing Phone</h1>
-
-<%= render 'form', phone: @phone %>
-
-<%= link_to 'Show', @phone %> |
-<%= link_to 'Back', phones_path %>
+<div class="dark-matter">
+    <h1><%= "#{t('title.edit')} #{@phone.model_name.human(count: 1)}" %></h1>
+    <%= render 'form', phone: @phone %>
+</div>

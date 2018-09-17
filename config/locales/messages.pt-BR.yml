@@ -1,3 +1,4 @@
 'pt-BR':
   message:
     confirm: Tem certeza?
+    error: proibiu este registro de ser salvo
