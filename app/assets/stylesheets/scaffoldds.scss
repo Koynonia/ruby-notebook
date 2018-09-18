@@ -1,10 +1,15 @@
 /* #### Dark Matter #### */
 a {
   color: #D3D3D3;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: #FFCC02;
 }
 ul {
   margin-top: 30px;
-  line-height: 2.5;
+  line-height: 1.5;
   list-style-type: square;
   list-style-position: inside;
 }
@@ -14,12 +19,16 @@ table {
 td {
   padding: 5px;
 }
+.page {
+  font-size: small;
+  text-align: right;
+}
 .dark-matter {
   margin-left: auto;
   margin-right: auto;
-  max-width: 500px;
+  max-width: 800px;
   background: #555;
-  padding: 20px 30px 20px 30px;
+  padding: 20px 30px 30px 30px;
   font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #D3D3D3;
   text-shadow: 1px 1px 1px #444;
@@ -60,7 +69,7 @@ td {
   margin-top: 2px;
   outline: 0 none;
   padding: 5px 0px 5px 5px;
-  width: 70%;
+  width: 100%;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -77,7 +86,7 @@ td {
   margin-top: 2px;
   outline: 0 none;
   padding: 5px 0px 5px 5px;
-  width: 58%;
+  width: 50%;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -92,7 +101,7 @@ td {
   -moz-appearance: none;
   text-indent: 0.01px;
   text-overflow: '';
-  width: 70%;
+  width: 50%;
   height: 35px;
   color: #525252;
   line-height: 25px;
@@ -100,12 +109,13 @@ td {
 .dark-matter textarea{
   height:100px;
   padding: 5px 0px 0px 5px;
-  width: 70%;
+  width: 100%;
 }
 .dark-matter .button {
   background: #FFCC02;
   border: none;
   padding: 10px 25px 10px 25px;
+  margin: 10px;
   color: #585858;
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -116,8 +126,10 @@ td {
   -webkit-box-shadow:1px 1px 1px #3D3D3D;
   -moz-box-shadow:1px 1px 1px #3D3D3D;
 }
-
 .dark-matter .button:hover {
   color: #333;
   background-color: #EBEBEB;
+}
+.dark-matter div.field_with_errors {
+  color: #FFCC02
 }

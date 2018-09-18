@@ -23,11 +23,10 @@
     </tbody>
   </table>
   <br>
-  <%= paginate @kinds %>
-  <br>
+  <div class="page"><%= paginate @kinds %></div>
   <br>
   <div class="actions">
-      <%= link_to "#{t('buttons.new')} #{@kinds.model.model_name.human(count: 1)}", new_kind_path, class: 'button' %>&nbsp;&nbsp;&nbsp;
+      <%= link_to "#{t('buttons.new')} #{@kinds.model.model_name.human(count: 1)}", new_kind_path, class: 'button' %>
       <%= link_to t('buttons.back'), bemvindo_path, class: 'button' %>
   </div>
 </div>

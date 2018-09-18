@@ -25,11 +25,10 @@
     </tbody>
   </table>
   <br>
-  <%= paginate @phones %>
-  <br>
+  <div class="page"><%= paginate @phones %></div>
   <br>
   <div class="actions">
-      <%= link_to "#{t('buttons.new')} #{@phones.model.model_name.human(count: 1)}", new_phone_path, class: 'button' %>&nbsp;&nbsp;&nbsp;
+      <%= link_to "#{t('buttons.new')} #{@phones.model.model_name.human(count: 1)}", new_phone_path, class: 'button' %>
       <%= link_to t('buttons.back'), bemvindo_path, class: 'button' %>
   </div>
 </div>

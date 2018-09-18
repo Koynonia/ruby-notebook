@@ -17,6 +17,8 @@ gem 'cocoon'
 gem 'jquery-rails'
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
 gem 'kaminari'
+# i18n for kaminari
+gem 'kaminari-i18n'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server

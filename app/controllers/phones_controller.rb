@@ -1,5 +1,6 @@
 class PhonesController < ApplicationController
   before_action :set_phone, only: [:show, :edit, :update, :destroy]
+  before_action :set_options_for_select, only: [:new, :edit, :update, :create]
 
   # GET /phones
   # GET /phones.json
@@ -63,6 +64,10 @@ class PhonesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    def set_options_for_select
+      @contact_options_for_select = Contact.all
+    end
+
     def set_phone
       @phone = Phone.find(params[:id])
     end
