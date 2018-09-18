@@ -22,7 +22,9 @@
       <% end %>
     </tbody>
   </table>
-<br>
+  <br>
+  <%= paginate @kinds %>
+  <br>
   <br>
   <div class="actions">
       <%= link_to "#{t('buttons.new')} #{@kinds.model.model_name.human(count: 1)}", new_kind_path, class: 'button' %>&nbsp;&nbsp;&nbsp;

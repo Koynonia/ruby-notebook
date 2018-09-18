@@ -25,6 +25,8 @@
     </tbody>
   </table>
   <br>
+  <%= paginate @contacts %>
+  <br>
   <br>
   <div class="actions">
       <%= link_to "#{t('buttons.new')} #{@contacts.model.model_name.human(count: 1)}", new_contact_path, class: 'button' %>&nbsp;&nbsp;&nbsp;
