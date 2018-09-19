@@ -5,6 +5,8 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
+# The best way to manage a Ruby application's gems
+gem 'bundler', '>= 1.8.4'
 # A library for generating fake data such as names, addresses, and phone numbers
 gem 'faker'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff http://rails-i18n.org
@@ -19,8 +21,8 @@ gem 'jquery-rails'
 gem 'kaminari'
 # i18n for kaminari
 gem 'kaminari-i18n'
-# Bundler-like DSL + rake tasks for Bower on Rails
-gem 'bower-rails', "~> 0.10.0"
+# A simple, versatile notification library
+gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
