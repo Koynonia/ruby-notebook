@@ -25,8 +25,6 @@ gem 'kaminari-i18n'
 gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 # The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. http://getbootstrap.com
 gem 'rails-assets-bootstrap', '3.3.6', source: 'https://rails-assets.org'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -61,6 +59,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Rails >= 3 pry initializer
   gem 'pry-rails', :group => :development
+  # Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 end
 
 group :development do
@@ -82,3 +82,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :production do
+  # Heroku dependency
+  gem 'pg'
+  gem 'rails_12factor'
+end
