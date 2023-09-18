@@ -26,7 +26,7 @@ gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 # The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. http://getbootstrap.com
 gem 'rails-assets-bootstrap', '3.3.6', source: 'https://rails-assets.org'
 # Use Puma as the app server
-gem 'puma', '~> 4.3'
+gem 'puma', '~> 5.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
